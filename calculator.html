@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="assets/css/calculator.css">
+</head>
+<body>
+ <div class="container">
+     <div class="row">
+         <input id="input1" type="text" class="inp" placeholder="0">
+     </div>
+     <div class="row">
+         <button onclick="reset()" class="amal">C</button>
+         <button onclick="numCatch(this)" value="(" class="amal">(</button>
+         <button onclick="numCatch(this)" value=")" class="amal">)</button>
+         <button onclick="numCatch(this)" value="/" class="amal">/</button>
+     </div>
+     <div class="row">
+        <button onclick="numCatch(this)" value="1">1</button>
+        <button onclick="numCatch(this)" value="2">2</button>
+        <button onclick="numCatch(this)" value="3">3</button>
+        <button onclick="numCatch(this)" value="*" class="amal">*</button>
+    </div>
+    <div class="row">
+        <button onclick="numCatch(this)" value="4">4</button>
+        <button onclick="numCatch(this)" value="5">5</button>
+        <button onclick="numCatch(this)" value="6">6</button>
+        <button onclick="numCatch(this)" value="-" class="amal">-</button>
+    </div>
+     <div class="row">
+         <button onclick="numCatch(this)" value="7">7</button>
+         <button onclick="numCatch(this)" value="8">8</button>
+         <button onclick="numCatch(this)" value="9">9</button>
+         <button onclick="numCatch(this)" value="+" class="amal">+</button>
+     </div>
+     <div class="row">
+         <button onclick="numCatch(this)" value="0">0</button>
+         <button onclick="barobar()" value="=" class="tenglik">=</button>
+         <button onclick="numCatch(this)" value="%" class="amal">%</button>
+     </div>
+ </div>
+<script src="assets/js/calculator.js"></script>
+</body>
+</html>
