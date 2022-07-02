@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="12-dars.css"> 
+    <title>Document</title> 
+</head> 
+<body> 
+    <div class="tasbeh"> 
+        <input type="text" class="ekran" value="0" /> 
+        <button class="tugma"></button> 
+        <button class="nolga"></button> 
+ 
+ 
+    </div> 
+     
+<script> 
+    document.querySelector('.tugma').addEventListener('click', function(){ 
+   var ekran = document.querySelector('.ekran'); 
+   console.log(typeof parseInt(ekran.value)); 
+   ekran.value = parseInt(ekran.value)  + 1; 
+}); 
+ 
+document.querySelector('.nolga').addEventListener('click', function(){ 
+    document.querySelector('.ekran').value = 0; 
+}) 
+</script> 
+</body> 
+</html>

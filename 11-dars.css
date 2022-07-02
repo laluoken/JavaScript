@@ -1,0 +1,119 @@
+*{ 
+  margin: 0px; 
+  padding: 0px; 
+} 
+header { 
+  width: 100%; 
+  height: 50px; 
+  background-color: aqua; 
+  position: fixed; 
+} 
+.red { 
+  background-color: red; 
+} 
+section { 
+  width: 100%; 
+  height: 100vh; 
+} 
+a { 
+  text-decoration: none; 
+  padding-left: 20px; 
+  position: relative; 
+} 
+.animatsa-button{ 
+  position: relative; 
+  padding: 7px 20px 7px 20px; 
+  color: red; 
+  letter-spacing: 2px; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  transition: 0.5s; 
+
+} 
+.animatsa-button::before{ 
+  content: ''; 
+  position: absolute; 
+  top: 0%; 
+  left: 0%; 
+  width: 50%; 
+  height: 100%; 
+  background-color: rgba(255, 255, 255, 0.05); 
+} 
+.animatsa-button svg, 
+.animatsa-button svg rect{ 
+  position: absolute; 
+  top: 0%; 
+  left: 0%; 
+  width: 100%; 
+  height: 100%; 
+  fill: transparent; 
+} 
+.animatsa-button svg rect{ 
+  stroke-width: 2; 
+  stroke: red;     
+} 
+.animatsa-button svg rect:hover{ 
+  animation: animate 2s linear infinite; 
+  stroke-dasharray: 100; 
+} 
+@keyframes animate{ 
+  0%{ 
+      stroke-dashoffset: 400; 
+  } 
+  100%{ 
+      stroke-dashoffset: 0; 
+  } 
+} 
+body{ 
+  display: grid; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+  font-weight: 900; 
+  transition: all 1s; 
+} 
+
+.tasbeh { 
+width: 163px; 
+height: 182px; 
+background-color: gray; 
+position: absolute; 
+top: 42px; 
+left: 42%; 
+border-radius: 15px; 
+border: 5px solid  black; 
+}    
+.ekran { 
+width: 55%; 
+position: absolute; 
+top: 10%; 
+left: 21%; 
+height: 30px; 
+caret-color:  white; 
+border-radius: 5px; 
+border: 5px solid rgba(0, 0, 0, 0.8); 
+text-align: center; 
+font-size: 23px; 
+} 
+.tugma { 
+  position: absolute; 
+top: 40%; 
+left: 36%; 
+width: 28%; 
+height: 44px; 
+border-radius: 82%; 
+background-color: black; 
+border: 3px solid rgb(255, 255, 255); 
+} 
+
+.nolga { 
+  position: absolute; 
+  top: 80%; 
+  left: 35%; 
+  width: 30%; 
+  height: 50px; 
+  border-radius: 80%; 
+  border: 3px solid rgb(66, 128, 0); 
+  background-color: rgb(63, 181, 80); 
+}
